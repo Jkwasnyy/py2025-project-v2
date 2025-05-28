@@ -1,3 +1,5 @@
+import random
+
 class Player:
     def __init__(self, money, name=""):
         self.__stack_ = money
@@ -62,3 +64,32 @@ class Player:
                 return action
             else:
                 print("Niepoprawna akcja. Spróbuj ponownie.")
+
+    def clear_hand(self):
+        self.hand = []
+
+class CPUPlayer(Player):
+    def __init__(self, stack_amount, name="CPU"):
+        super().__init__(stack_amount, name)
+
+    def bet_prompt(self):
+        action = random.choice(["fold", "call", "raise"])
+        print(f"{self.get_name()} decyduje się na: {action}")
+
+        if action == "raise":
+            # Losowa kwota podbicia (np. 10–100)
+            raise_amount = random.choice([10, 20, 50])
+            print(f"{self.get_name()} podbija o {raise_amount}")
+            return ("raise", raise_amount)
+        return action
+
+    def change_card_prompt(self):
+        # 50% szans na wymianę jednej losowej karty
+        if random.random() < 0.5:
+            index = random.randint(0, 4)
+            print(f"{self.get_name()} wymienia kartę nr {index + 1}")
+            return index
+        else:
+            print(f"{self.get_name()} nie wymienia kart")
+            return None
+

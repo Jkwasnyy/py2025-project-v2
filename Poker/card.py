@@ -27,6 +27,6 @@ class Deck:
 
     def deal(self, players):
         for player in players:
+            player.clear_hand()
             for _ in range(5):
-                card = self.cards.pop()
-                player.take_card(card)
+                player.take_card(self.cards.pop())
