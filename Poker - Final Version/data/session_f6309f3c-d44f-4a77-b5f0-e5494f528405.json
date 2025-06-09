@@ -1,0 +1,30 @@
+{
+  "game_id": "f6309f3c-d44f-4a77-b5f0-e5494f528405",
+  "pot": 70,
+  "players": [
+    {
+      "name": "Jakub",
+      "stack": 110,
+      "hand": [
+        "4♠",
+        "3♦",
+        "3♣",
+        "K♠",
+        "4♥"
+      ],
+      "is_cpu": false
+    },
+    {
+      "name": "CPU",
+      "stack": 90,
+      "hand": [
+        "6♣",
+        "J♥",
+        "J♠",
+        "10♦",
+        "3♠"
+      ],
+      "is_cpu": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "game_id": "bdac6958-2369-4b06-ad0f-7336b418cbdf",
+  "timestamp": "2025-06-09T21:07:16.973832",
+  "players": [
+    {
+      "id": 1,
+      "name": "Player1",
+      "stack": 1000,
+      "is_cpu": false
+    },
+    {
+      "id": 2,
+      "name": "CPU",
+      "stack": 1000,
+      "is_cpu": true
+    }
+  ],
+  "pot": 0,
+  "hands": {
+    "1": [],
+    "2": []
+  }
+}

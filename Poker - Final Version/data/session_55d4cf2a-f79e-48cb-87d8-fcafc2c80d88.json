@@ -1,0 +1,22 @@
+{
+  "game_id": "55d4cf2a-f79e-48cb-87d8-fcafc2c80d88",
+  "timestamp": "2025-06-08T16:46:36.201483",
+  "players": [
+    {
+      "id": 1,
+      "name": "Player1",
+      "stack": 1050,
+      "is_cpu": false
+    }
+  ],
+  "pot": 0,
+  "hands": {
+    "1": [
+      "J♦",
+      "7♠",
+      "A♣",
+      "6♠",
+      "6♦"
+    ]
+  }
+}
